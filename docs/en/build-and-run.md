@@ -96,4 +96,4 @@ The historical hardware result was `vmrun_status=0`, `exit_code=0x78` (`VMEXIT_H
 
 For a source-level target, success means only that the named helper passed that check. A hardware smoke also requires a matching ABI, a fresh query showing SVM/NPT, passing FPU preflight, exit code `0x78`, successful lease/context release, and return to the shell. Record the loaded bundle UUID/hash and exact OS/SDK versions with the result.
 
-These checks do not establish Alpine boot, SMP, recovery from every kernel fault, or production readiness. A complete guest and QEMU integration are outside this package.
+These checks do not establish that a full guest OS can boot, that SMP works, that every kernel fault is recoverable, or that the code is production-ready. A complete guest and QEMU integration are outside this package.

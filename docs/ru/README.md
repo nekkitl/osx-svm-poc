@@ -45,7 +45,7 @@ flowchart LR
 | Сборка kext | Исходники компилируются для выбранного SDK | Загрузку, безопасный world switch или корректный guest |
 | Source-level проверки | Логику конкретных helpers и структур | Аппаратное поведение XNU/CPU |
 | CPUID/MSR query | SVM/NPT доступны и текущее состояние per-CPU | Что provider смог выполнить VMRUN |
-| HLT hardware smoke | Один ограниченный SVM entry/exit на проверенном кандидате и машине | Произвольную ОС, Alpine boot, SMP или production safety |
+| HLT hardware smoke | Один ограниченный SVM entry/exit на проверенном кандидате и машине | Загрузку полноценной ОС, SMP или production safety |
 
 ## Статус и ограничения
 

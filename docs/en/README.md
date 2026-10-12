@@ -45,7 +45,7 @@ Source-level checks cover NPT mappings, VMCB state round-tripping, XSTATE/events
 | Kext build | Sources compile for the selected SDK | Loading, safe world switching, or a correct guest |
 | Source-level checks | Logic in specific helpers and structures | Hardware behavior in XNU or on the CPU |
 | CPUID/MSR query | SVM/NPT capability and per-CPU state | That this provider executed VMRUN |
-| HLT hardware smoke | One constrained SVM entry/exit on the tested build and machine | Arbitrary OS execution, Alpine boot, SMP, or production safety |
+| HLT hardware smoke | One constrained SVM entry/exit on the tested build and machine | Booting a full OS, SMP, or production safety |
 
 ## Status and limitations
 
