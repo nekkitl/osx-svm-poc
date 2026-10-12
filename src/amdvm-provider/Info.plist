@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key><string>English</string>
+	<key>CFBundleExecutable</key><string>AMDVMProbe</string>
+	<key>CFBundleIdentifier</key><string>com.nekkit.amdvm.probe</string>
+	<key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+	<key>CFBundleName</key><string>AMDVMProbe</string>
+	<key>CFBundlePackageType</key><string>KEXT</string>
+	<key>CFBundleShortVersionString</key><string>0.1</string>
+	<key>CFBundleVersion</key><string>1</string>
+	<key>OSBundleRequired</key><string>Root</string>
+	<key>OSBundleCompatibleVersion</key><string>0.1</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.kpi.iokit</key><string>20.0.0</string>
+		<key>com.apple.kpi.libkern</key><string>20.0.0</string>
+		<key>com.apple.kpi.mach</key><string>20.0.0</string>
+		<key>com.apple.kpi.unsupported</key><string>20.0.0</string>
+	</dict>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>AMDVMProbe</key>
+		<dict>
+			<key>CFBundleIdentifier</key><string>com.nekkit.amdvm.probe</string>
+			<key>IOClass</key><string>AMDVMProbeService</string>
+			<key>IOProviderClass</key><string>IOResources</string>
+			<key>IOResourceMatch</key><string>IOKit</string>
+			<key>IOUserClientClass</key><string>AMDVMProbeUserClient</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
